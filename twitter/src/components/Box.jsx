@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import CreateTweet from "./CreateTweet"
-import Login from "./Login"
 import { AuthContext } from "../context/AuthContext";
+import LogReg from "./LogReg";
 
 function Box() {
 
@@ -9,7 +9,7 @@ function Box() {
 
     return( <div>
         {
-            user ? <CreateTweet/> : <Login/>
+            user ? <CreateTweet/> : <LogReg/>
         }
 
     </div>

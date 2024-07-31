@@ -27,7 +27,7 @@ const Login = () => {
     };
 
     return (
-        <div className="d-flex flex-column justify-content-center align-items-center mt-5 min-vh-100">
+        <div className="d-flex flex-column justify-content-center align-items-center mt-5">
             <Card className='p-4'>
         
             <h2>Login</h2>
@@ -44,7 +44,7 @@ const Login = () => {
             </form>
             {message && <p>{message}</p>}
 
-            <a href="./register">New User</a>
+            <a href="./">New User</a>
 
                     
             </Card>

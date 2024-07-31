@@ -20,7 +20,7 @@ const Register = () => {
     };
 
     return (
-        <div className="d-flex flex-column justify-content-center align-items-center mt-5 min-vh-100">
+        <div className="d-flex flex-column justify-content-center align-items-center mt-5 ">
             <Card className='p-4'>
             <h2>Register</h2>
             <form onSubmit={handleRegister}>

@@ -43,7 +43,7 @@ function NavbarComponent() {
 
     const handleLogout = () => {
         logout(); // Call the logout method from AuthContext
-        navigate('/login'); // Redirect to login page after logging out
+        navigate('/'); // Redirect to login page after logging out
     };
 
     return (

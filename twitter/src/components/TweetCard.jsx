@@ -12,7 +12,7 @@ function TweetCard(props, showEditDelete) {
     return (
         <>
         <div >
-            <Card className="card mt-5" style={{ width: '36rem' }}>
+            <Card className="card mt-5" >
                 <Card.Title className='m-3 fw-bold'>{props.username}</Card.Title>
                 <Card.Img variant="top" src={props.image} />
                 <Card.Body>

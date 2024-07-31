@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from rest_framework import status
 
 tweets = [
-    {"id": 1, "username": "user1", "content": "This is the first tweet"},
+    {"id": 1, "username": "Twitter", "content": "lets tweet 🐤"},
 ]
 
 @api_view(['GET', 'POST'])

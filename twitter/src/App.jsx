@@ -5,8 +5,7 @@ import Footer from "./components/Footer"
 import NavbarComponent from "./components/Navbar"
 import { useState, useEffect, useContext } from "react"
 import axios from "axios"
-import Register from "./components/Register"
-import Login from "./components/Login"
+
 import ProtectedRoute from "./components/ProtectedRoute"
 import HomePage from "./components/Homepage"
 import { AuthContext } from "./context/AuthContext"
@@ -26,20 +25,15 @@ function App() {
       <TweetProvider>
         <NavbarComponent />
         <Routes>
-        <Route path="/register" element={<Register />} />
                 <Route
-                    path="/login"
-                    element={user ? <Navigate to="/home" replace /> : <Login />}
-                />
-                <Route
-                    path="/home"
-                    element={user ? <HomePage /> : <Navigate to="/login" replace />}
+                    path="/"
+                    element={<HomePage />}
                 />
                 <Route
                     path="/profile"
                     element={<Profile />}
                 />
-                <Route path="*" element={<Navigate to="/login" replace />} />
+                <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
       </TweetProvider>
