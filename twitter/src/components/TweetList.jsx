@@ -35,6 +35,7 @@ const TweetList = () => {
               username={tweet.username}
               image={tweet.image}
               text={tweet.content}
+              showEditDelete = {false}
             />
           ))
         ) : (

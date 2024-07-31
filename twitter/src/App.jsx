@@ -10,6 +10,7 @@ import Login from "./components/Login"
 import ProtectedRoute from "./components/ProtectedRoute"
 import HomePage from "./components/Homepage"
 import { AuthContext } from "./context/AuthContext"
+import './App.css'
 
 
 
